@@ -81,7 +81,7 @@ Fluxo por frame: `camera` → `hand_tracker` → `gesture_detector` → `mouse_c
 - Versões instaladas: opencv-python 5.0.0.93, mediapipe 1.1.1, PyAutoGUI 0.9.54, numpy 2.5.4.
 - O `opencv-contrib-python` também está instalado e pode conflitar com o `opencv-python`.
 - Repositório: https://github.com/gustaconcedev/hand-mouse.git
-- Branch base: `handmouse-master`.
+- Branch base: `master-handmouse` (antigo `handmouse#01`). O antigo `handmouse-master` foi apagado; o histórico dele está contido no `master-handmouse`.
 
 ## 8. Registro de alterações
 
@@ -90,3 +90,4 @@ Fluxo por frame: `camera` → `hand_tracker` → `gesture_detector` → `mouse_c
 | 2026-10-22 | handmouse-master | Repositório criado; diário de bordo com a ideia do projeto |
 | 2026-10-22 | handmouse#01 | Diário de bordo movido para `docs/diario de bordo/` |
 | 2026-10-22 | handmouse#01 | Estrutura do projeto criada (pacote `handmouse/`, `main.py`, modelo, README); Etapas 1 a 3 implementadas, ainda não testadas com a câmera |
+| 2026-10-22 | master-handmouse | Branch `handmouse-master` apagado; `handmouse#01` renomeado para `master-handmouse`, a nova branch base |
