@@ -1,6 +1,6 @@
 # Diário de Bordo — HandMouse
 
-Controle do mouse e do teclado por gestos da mão, usando a webcam.
+Controle do mouse e do teclado por gestos da mão, usando a webcam e a força haha.
 
 ## 1. Visão geral
 
@@ -38,17 +38,21 @@ Os gestos são regras matemáticas sobre os pontos do MediaPipe; não há treina
 
 ```
 hand-mouse/
-├── main.py              # loop principal, tecla de saída, modo pausa
-├── config.py            # resolução, área útil, suavização, limiares, cooldown
-├── camera.py            # captura da webcam
-├── hand_tracker.py      # HandLandmarker (modo VIDEO), retorna 21 pontos
-├── gesture_detector.py  # dedos levantados, pinça, estabilização por frames
-├── mouse_controller.py  # mapeamento câmera→tela, suavização, cliques e arrasto
+├── main.py                  # loop principal, teclas de saída e pausa
+├── handmouse/
+│   ├── config.py            # resolução, área útil, suavização, limiares, cooldown, atalhos
+│   ├── camera.py            # captura da webcam
+│   ├── hand_tracker.py      # HandLandmarker (modo VIDEO), retorna 21 pontos
+│   ├── gesture_detector.py  # dedos levantados, pinça, estabilização por frames
+│   ├── mouse_controller.py  # mapeamento câmera→tela, suavização, cliques e arrasto
+│   └── hotkeys.py           # atalhos globais F8/F10 via API do Windows
 ├── models/
 │   └── hand_landmarker.task
 ├── requirements.txt
 └── README.md
 ```
+
+Execução: `py main.py`.
 
 Fluxo por frame: `camera` → `hand_tracker` → `gesture_detector` → `mouse_controller` → desenho na tela, com `main` mantendo o ciclo.
 
@@ -85,3 +89,4 @@ Fluxo por frame: `camera` → `hand_tracker` → `gesture_detector` → `mouse_c
 |---|---|---|
 | 2026-10-22 | handmouse-master | Repositório criado; diário de bordo com a ideia do projeto |
 | 2026-10-22 | handmouse#01 | Diário de bordo movido para `docs/diario de bordo/` |
+| 2026-10-22 | handmouse#01 | Estrutura do projeto criada (pacote `handmouse/`, `main.py`, modelo, README); Etapas 1 a 3 implementadas, ainda não testadas com a câmera |
