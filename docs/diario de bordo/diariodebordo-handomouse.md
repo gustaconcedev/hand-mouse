@@ -84,3 +84,4 @@ Fluxo por frame: `camera` → `hand_tracker` → `gesture_detector` → `mouse_c
 | Data | Branch | Alteração |
 |---|---|---|
 | 2026-10-22 | handmouse-master | Repositório criado; diário de bordo com a ideia do projeto |
+| 2026-10-22 | handmouse#01 | Diário de bordo movido para `docs/diario de bordo/` |
